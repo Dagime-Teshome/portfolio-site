@@ -1,0 +1,45 @@
+.listClass {
+    list-style: none;
+}
+
+.listItemClass {
+    display: inline-block;
+    border: 2px solid rgba(57, 57, 57, .5);
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    line-height: 7;
+    font-size: 14px;
+}
+
+.listWrapper {
+    width: 100%;
+    max-width: 400px;
+    min-height: 450px
+}
+
+.divider {
+    height: 2px;
+    width: 130px;
+    display: block;
+    margin: 20px 0;
+    background-color: #fbfbfb;
+}
+
+.descWrapper {
+    min-height: 450px;
+}
+
+.headerClass {
+    margin: 20px 0;
+}
+
+.horDivider {
+    width: 2px;
+    height: 600px;
+    display: block;
+    background-color: #fbfbfb;
+}
