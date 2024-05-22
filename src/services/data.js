@@ -164,7 +164,7 @@ export const projectData = [
       { name: "Node", icons: faNode },
     ],
     sourceCodeLink: "https://github.com/Dagime-Teshome/messagingAPI",
-    projectLink: "https://www.marakisoft.com/home",
+    projectLink: null,
   },
   {
     id: "PORT",
