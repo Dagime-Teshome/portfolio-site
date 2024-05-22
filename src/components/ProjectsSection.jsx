@@ -88,7 +88,8 @@ const ProjectsSection = () => {
                           onClick={() => {
                             onModalOpen(card.id);
                           }}
-                          className="flex gap-2 justify-center items-center rounded-xl p-4 font-semibold text-neutral-50 bg-neutral-950 "
+                          className="transition duration-700 ease-in-out
+                          hover:-translate-y-1 hover:scale-110 flex gap-2 justify-center items-center rounded-xl p-4 font-semibold text-neutral-50 bg-neutral-950 "
                         >
                           More Detail
                           <GoArrowRight className="text-white font-light text-lg" />

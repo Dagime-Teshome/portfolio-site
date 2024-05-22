@@ -73,14 +73,14 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
                     return (
                       <CarouselItem key={i} className="md:basis-1/2">
                         <div
-                          className={`flex flex-row justify-center my-6 align-middle items-center w-full ${
-                            selectedProject.id === "MESS"
-                              ? "w-96 h-[80%]"
-                              : "p-3"
-                          } `}
+                          className={`flex flex-row justify-center my-6 align-middle items-center`}
                         >
                           <Image
-                            className="max-h-full max-w-full object-cover"
+                            className={`max-h-full max-w-full object-cover ${
+                              selectedProject.id === "MESS"
+                                ? "w-96 h-[30%]"
+                                : "p-3"
+                            }`}
                             src={image}
                           ></Image>
                         </div>
@@ -88,10 +88,12 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
                     );
                   })}
                 </CarouselContent>
-                <div className="mt-8 h-14 hidden lg:block">
-                  <CarouselPrevious className="absolute -left-[90px] top-[200px] w-16 h-16 bg-black text-white" />
-                  <CarouselNext className="absolute -right-[90px] top-[200px] w-16 h-16 bg-black text-white" />
-                </div>
+                {selectedProject?.id !== "MESS" ? (
+                  <div className="mt-8 h-14 hidden lg:block">
+                    <CarouselPrevious className="absolute -left-[90px] top-[200px] w-16 h-16 bg-black text-white" />
+                    <CarouselNext className="absolute -right-[90px] top-[200px] w-16 h-16 bg-black text-white" />
+                  </div>
+                ) : null}
               </Carousel>
             </div>
             <div className=" mt-5 flex w-full h-8 justify-evenly items-center lg:hidden overflow-clip">
@@ -137,24 +139,26 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
               <div className="flex flex-col lg:flex-row gap-5 mb-5">
                 {selectedProject?.projectLink ? (
                   <a href={selectedProject?.projectLink} target="blank">
-                    <button className="flex gap-2 justify-center items-center rounded-xl p-2 font-semibold text-neutral-50 bg-neutral-950 ">
+                    <button
+                      className="transition duration-700 ease-in-out
+              hover:-translate-y-1 hover:scale-110 flex gap-2 justify-center items-center rounded-xl p-2 font-semibold text-neutral-50 bg-neutral-950 "
+                    >
                       View Project
                       <GoArrowRight className="text-white font-light text-lg" />
                     </button>
                   </a>
-                ) : (
-                  ""
-                )}
+                ) : null}
                 {selectedProject?.sourceCodeLink ? (
                   <a href={selectedProject?.sourceCodeLink} target="blank">
-                    <button className="flex gap-2 justify-center items-center rounded-xl p-2 font-semibold text-neutral-50 bg-neutral-950 ">
+                    <button
+                      className="transition duration-700 ease-in-out
+              hover:-translate-y-1 hover:scale-110 flex gap-2 justify-center items-center rounded-xl p-2 font-semibold text-neutral-50 bg-neutral-950 "
+                    >
                       Source Code
                       <GoArrowRight className="text-white font-light text-lg" />
                     </button>
                   </a>
-                ) : (
-                  ""
-                )}
+                ) : null}
               </div>
               <div className="">
                 <span className="text-base font-bold text-gray-800 text-left">
