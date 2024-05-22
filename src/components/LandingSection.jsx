@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
-import { Image } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import img from "../images/portfolio_crop-removebg.png";
 import Socials from "./Socials";
@@ -35,12 +34,41 @@ const LandingSection = () => (
         </div>
       </div>
       <div className="flex justify-center lg:w-1/2">
-        <div
+        {/* <div
           className=" flex min-w-80 min-h-80 border-2 border-solid shadow-md
        outline-gray-900 rounded-full bg-gradient-to-r from-gray-50 to-gray-100 overflow-clip"
         >
           <Image className=" object-cover" src={img} alt="me" />
-        </div>
+          
+        </div> */}
+        <svg
+          className="w-full h-full"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <clipPath id="blobClip">
+              <path
+                fill="#F2F4F8"
+                d="M32.1,-60.6C39.5,-51.3,42,-38.5,52.2,-27.8C62.5,-17.1,80.6,-8.6,84.2,2.1C87.7,12.7,76.7,25.3,67.3,37.4C57.8,49.5,49.9,61.1,38.9,67.7C28,74.4,14,76.1,0.2,75.7C-13.5,75.3,-27,72.7,-41.2,67.9C-55.3,63.2,-70.1,56.1,-72.2,44.4C-74.2,32.7,-63.4,16.3,-60.3,1.8C-57.3,-12.8,-62,-25.7,-60.5,-38.3C-59,-50.9,-51.3,-63.2,-40.2,-70.5C-29.1,-77.7,-14.5,-79.7,-1.1,-77.8C12.3,-75.9,24.7,-70,32.1,-60.6Z"
+                transform="translate(100 100)"
+              />
+            </clipPath>
+          </defs>
+          <path
+            fill="#F2F4F8"
+            d="M32.1,-60.6C39.5,-51.3,42,-38.5,52.2,-27.8C62.5,-17.1,80.6,-8.6,84.2,2.1C87.7,12.7,76.7,25.3,67.3,37.4C57.8,49.5,49.9,61.1,38.9,67.7C28,74.4,14,76.1,0.2,75.7C-13.5,75.3,-27,72.7,-41.2,67.9C-55.3,63.2,-70.1,56.1,-72.2,44.4C-74.2,32.7,-63.4,16.3,-60.3,1.8C-57.3,-12.8,-62,-25.7,-60.5,-38.3C-59,-50.9,-51.3,-63.2,-40.2,-70.5C-29.1,-77.7,-14.5,-79.7,-1.1,-77.8C12.3,-75.9,24.7,-70,32.1,-60.6Z"
+            transform="translate(100 100)"
+          />
+          <image
+            clip-path="url(#blobClip)"
+            href={img}
+            x="-45"
+            y="-10"
+            height="250px"
+            width="250px"
+          />
+        </svg>
       </div>
     </div>
     <FontAwesomeIcon

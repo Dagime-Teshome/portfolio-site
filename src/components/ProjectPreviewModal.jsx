@@ -23,6 +23,7 @@ import { projectData } from "../services/data";
 import { SiMysql } from "react-icons/si";
 import { SiNestjs } from "react-icons/si";
 import { SiDotnet } from "react-icons/si";
+import { Image } from "@chakra-ui/react";
 
 const ProjectPreviewModal = forwardRef((props, refs) => {
   const [api, setApi] = useState();
@@ -71,11 +72,17 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
                   {selectedProject?.images.map((image, i) => {
                     return (
                       <CarouselItem key={i} className="md:basis-1/2">
-                        <div className="flex flex-row justify-center my-6 align-middle items-center w-full  p-3">
-                          <img
-                            className="max-h-full max-w-full"
+                        <div
+                          className={`flex flex-row justify-center my-6 align-middle items-center w-full ${
+                            selectedProject.id === "MESS"
+                              ? "w-96 h-[80%]"
+                              : "p-3"
+                          } `}
+                        >
+                          <Image
+                            className="max-h-full max-w-full object-cover"
                             src={image}
-                          ></img>
+                          ></Image>
                         </div>
                       </CarouselItem>
                     );
@@ -128,18 +135,26 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
             </div>
             <div className="flex flex-col my-5 lg:w-[30%] w-full">
               <div className="flex flex-col lg:flex-row gap-5 mb-5">
-                <a href="https://www.marakisoft.com/home">
-                  <button className="flex gap-2 justify-center items-center rounded-xl p-2 font-semibold text-neutral-50 bg-neutral-950 ">
-                    View Project
-                    <GoArrowRight className="text-white font-light text-lg" />
-                  </button>
-                </a>
-                <a href="https://www.marakisoft.com/home">
-                  <button className="flex gap-2 justify-center items-center rounded-xl p-2 font-semibold text-neutral-50 bg-neutral-950 ">
-                    Source Code
-                    <GoArrowRight className="text-white font-light text-lg" />
-                  </button>
-                </a>
+                {selectedProject?.projectLink ? (
+                  <a href={selectedProject?.projectLink} target="blank">
+                    <button className="flex gap-2 justify-center items-center rounded-xl p-2 font-semibold text-neutral-50 bg-neutral-950 ">
+                      View Project
+                      <GoArrowRight className="text-white font-light text-lg" />
+                    </button>
+                  </a>
+                ) : (
+                  ""
+                )}
+                {selectedProject?.sourceCodeLink ? (
+                  <a href={selectedProject?.sourceCodeLink} target="blank">
+                    <button className="flex gap-2 justify-center items-center rounded-xl p-2 font-semibold text-neutral-50 bg-neutral-950 ">
+                      Source Code
+                      <GoArrowRight className="text-white font-light text-lg" />
+                    </button>
+                  </a>
+                ) : (
+                  ""
+                )}
               </div>
               <div className="">
                 <span className="text-base font-bold text-gray-800 text-left">

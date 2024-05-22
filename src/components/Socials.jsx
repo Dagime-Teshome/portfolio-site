@@ -18,7 +18,7 @@ const Socials = () => {
           <TooltipProvider key={i}>
             <Tooltip>
               <TooltipTrigger>
-                <a key={i} href={social.url}>
+                <a key={i} href={social.url} target="blank">
                   <FontAwesomeIcon
                     className="transition duration-700 ease-in-out
               hover:-translate-y-1 hover:scale-110
