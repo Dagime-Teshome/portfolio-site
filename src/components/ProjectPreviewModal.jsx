@@ -23,7 +23,6 @@ import { projectData } from "../services/data";
 import { SiMysql } from "react-icons/si";
 import { SiNestjs } from "react-icons/si";
 import { SiDotnet } from "react-icons/si";
-import { Image } from "@chakra-ui/react";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
@@ -85,6 +84,8 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
                                   : "p-3"
                               }`}
                               src={image}
+                              loading="lazy"
+                              decoding="asynchronous"
                             ></img>
                           </Zoom>
                         </div>

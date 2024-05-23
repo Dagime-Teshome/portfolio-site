@@ -67,6 +67,8 @@ const LandingSection = () => (
             y="-10"
             height="250px"
             width="250px"
+            loading="eager"
+            decoding="asynchronous"
           />
         </svg>
       </div>

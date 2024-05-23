@@ -139,7 +139,7 @@ export const projectData = [
   },
   {
     id: "POS",
-    images: [sunshine1, sunshine2, sunshine3, sunshine4, sunshine5, sunshine6],
+    images: [sunshine1, sunshine6, sunshine2, sunshine3, sunshine4, sunshine5],
     projectName: "Sunshine Laundry",
     projectYear: "2020",
     description: `The Sunshine Laundry App, crafted for our client, simplifies laundry service tasks. It tracks orders 
