@@ -74,7 +74,7 @@ const LandingSection = () => (
       </div>
     </div>
     <FontAwesomeIcon
-      className="hidden animate-bounce lg:block text-6xl mt-16"
+      className="hidden animate-bounce lg:block text-6xl -mt-10"
       icon={faArrowDownLong}
     />
   </FullScreenSection>
