@@ -84,8 +84,6 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
                                   : "p-3"
                               }`}
                               src={image}
-                              loading="lazy"
-                              decoding="asynchronous"
                             ></img>
                           </Zoom>
                         </div>

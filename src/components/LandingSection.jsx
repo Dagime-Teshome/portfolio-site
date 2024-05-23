@@ -16,7 +16,7 @@ const LandingSection = () => (
             Front-end Developer
           </h5>
           <h3 className="text-pretty mt-5  text-center text-xl">
-            Experienced front-end developer with 4+ years of expertise crafting
+            Experienced front-end developer with 5+ years of expertise crafting
             dynamic and user-friendly web experiences.
           </h3>
           <Socials />
@@ -39,7 +39,6 @@ const LandingSection = () => (
        outline-gray-900 rounded-full bg-gradient-to-r from-gray-50 to-gray-100 overflow-clip"
         >
           <Image className=" object-cover" src={img} alt="me" />
-          
         </div> */}
         <svg
           className="w-full h-full"

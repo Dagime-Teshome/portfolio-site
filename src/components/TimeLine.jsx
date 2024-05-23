@@ -26,7 +26,7 @@ const TimelineSection = () => {
             <div>
               <ul className="w-4/5 mx-auto">
                 <li className="flex flex-col md:flex-row border-b-2 gap-2 py-5">
-                  <div className="md:w-1/3 font-thin">Aug 2021 - Sep 2023</div>
+                  <div className="md:w-1/3 font-thin">Aug 2021 - Present</div>
                   <div className="md:w-1/3 font-extrabold">
                     Full Stack Developer
                   </div>
@@ -35,7 +35,7 @@ const TimelineSection = () => {
                   </div>
                 </li>
                 <li className="flex flex-col md:flex-row border-b-2 gap-2 py-5">
-                  <div className="md:w-1/3 font-thin">Oct 2019 - May 2020</div>
+                  <div className="md:w-1/3 font-thin">Jun 2020 - Jul 2021</div>
                   <div className="md:w-1/3 font-extrabold">
                     Mid-Level Front End Developer
                   </div>
@@ -44,7 +44,7 @@ const TimelineSection = () => {
                   </div>
                 </li>
                 <li className="flex flex-col md:flex-row gap-2 py-5">
-                  <div className="md:w-1/3 font-thin">Jun 2020 - Jul 2021</div>
+                  <div className="md:w-1/3 font-thin">Oct 2019 - May 2020</div>
                   <div className="md:w-1/3 font-extrabold">
                     Junior Front End Developer
                   </div>
