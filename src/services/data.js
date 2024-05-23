@@ -125,7 +125,7 @@ export const projectData = [
     id: "MR",
     images: [Marki1, Marki2, Marki3, Marki4, Marki5, Marki6],
     projectName: "Maraki ERP",
-    projectYear: "2020",
+    projectYear: "2020 - Present",
     description: `I helped develop a web-based ERP system to improve efficiency for Ethiopian businesses. 
     This system automates accounting, manages employee data and payroll, and centralizes customer information.
      It also streamlines inventory management and helps with project planning.
@@ -141,7 +141,7 @@ export const projectData = [
     id: "POS",
     images: [sunshine1, sunshine6, sunshine2, sunshine3, sunshine4, sunshine5],
     projectName: "Sunshine Laundry",
-    projectYear: "2020",
+    projectYear: "2020 - Present",
     description: `The Sunshine Laundry App, crafted for our client, simplifies laundry service tasks. It tracks orders 
     smoothly from drop-off to pick-up and plans efficient delivery routes. With easy inventory management, 
     it ensures supplies are never low. Customers enjoy hassle-free payments and timely updates. Personalized 
@@ -162,7 +162,7 @@ export const projectData = [
     id: "MESS",
     images: [mess1, mess2],
     projectName: "Messaging API",
-    projectYear: "2020",
+    projectYear: "2022/03 - 2022/05",
     description: `This project has significantly improved communication within the Marki ERP system. By developing a versatile messaging API, users can seamlessly receive crucial notifications through various channels such as email, Telegram, Slack, or SMS. This integration ensures that important updates regarding orders, payments, or inventory are promptly delivered to users wherever they are. This enhancement simplifies communication processes, making it easier for users to stay informed and connected with the system. Overall, this project has strengthened Marki ERP by providing a reliable and efficient means of communication for its users.`,
     projImpact: `The messaging API integration in Marki ERP has improved communication, ensuring users receive timely notifications via preferred channels like email, Telegram, Slack, or SMS. This has led to faster responses, better decisions, and increased productivity. With critical information readily available, operations run smoother and teamwork is better. Overall, the messaging API has transformed communication in Marki ERP, making work easier and more successful.`,
     projSkills: [
@@ -176,7 +176,7 @@ export const projectData = [
     id: "PORT",
     images: [Portfolio, Portfolio2, Portfolio3, Portfolio4, Portfolio5],
     projectName: "Portfolio Site",
-    projectYear: "2020",
+    projectYear: "2023-Present",
     description: `This project serves as a showcase for my skills and the projects I've been involved in. It's a platform where you can explore my work and see the range of projects I've worked on. From web development to software projects, this website is a reflection of my expertise and dedication to creating meaningful solutions. `,
     projImpact: ` By showcasing my skills and projects on this portfolio website, I aim to increase my exposure and access better career opportunities. This platform serves as a window into my capabilities, allowing potential employers or collaborators to gain insights into my expertise and the value I can bring to their projects or teams. Through this increased visibility, I hope to connect with like-minded professionals, explore new career avenues, and ultimately advance my professional journey.`,
     projSkills: [
