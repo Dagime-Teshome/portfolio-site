@@ -24,6 +24,8 @@ import { SiMysql } from "react-icons/si";
 import { SiNestjs } from "react-icons/si";
 import { SiDotnet } from "react-icons/si";
 import { Image } from "@chakra-ui/react";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 const ProjectPreviewModal = forwardRef((props, refs) => {
   const [api, setApi] = useState();
@@ -75,14 +77,16 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
                         <div
                           className={`flex flex-row justify-center my-6 align-middle items-center`}
                         >
-                          <Image
-                            className={`max-h-full max-w-full object-cover ${
-                              selectedProject.id === "MESS"
-                                ? "w-96 h-[30%]"
-                                : "p-3"
-                            }`}
-                            src={image}
-                          ></Image>
+                          <Zoom>
+                            <img
+                              className={`max-h-full max-w-full object-cover ${
+                                selectedProject.id === "MESS"
+                                  ? "w-96 h-[30%]"
+                                  : "p-3"
+                              }`}
+                              src={image}
+                            ></img>
+                          </Zoom>
                         </div>
                       </CarouselItem>
                     );

@@ -27,6 +27,12 @@ import Portfolio4 from "../images/Portfolio/pika-4.png";
 import Portfolio5 from "../images/Portfolio/pika-5.png";
 import mess1 from "../images/messaging/pika-1716372695815-1x.png";
 import mess2 from "../images/messaging/pika-1716373062327-1x.png";
+import sunshine1 from "../images/sunshine/sunshine1.png";
+import sunshine2 from "../images/sunshine/sunshine2.png";
+import sunshine3 from "../images/sunshine/sunshine3.png";
+import sunshine4 from "../images/sunshine/sunshine4.png";
+import sunshine5 from "../images/sunshine/sunshine5.png";
+import sunshine6 from "../images/sunshine/sunshine6.png";
 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -133,7 +139,7 @@ export const projectData = [
   },
   {
     id: "POS",
-    images: [Marki1, Marki2, Marki3, Marki4, Marki5, Marki6],
+    images: [sunshine1, sunshine2, sunshine3, sunshine4, sunshine5, sunshine6],
     projectName: "Sunshine Laundry",
     projectYear: "2020",
     description: `The Sunshine Laundry App, crafted for our client, simplifies laundry service tasks. It tracks orders 
