@@ -77,6 +77,8 @@ const ProjectsSection = () => {
                             className=" w-full h-full object-cover"
                             src={card.image}
                             alt="Dagime"
+                            loading="eager"
+                            decoding="asynchronous"
                           />
                         </div>
                       </div>

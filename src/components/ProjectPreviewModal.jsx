@@ -80,10 +80,14 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
                             <img
                               className={`max-h-full max-w-full object-cover ${
                                 selectedProject.id === "MESS"
-                                  ? "w-96 h-[30%]"
+                                  ? "min-w-96 min-h-[30%]"
                                   : "p-3"
                               }`}
+                              height="300px"
+                              width="600px"
                               src={image}
+                              loading="lazy"
+                              decoding="asynchronous"
                             ></img>
                           </Zoom>
                         </div>
