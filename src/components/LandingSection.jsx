@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 import FullScreenSection from "./FullScreenSection";
-import img from "../images/portfolio_crop-removebg.png";
+import img from "../images/headShots/mePicture.webp";
 import Socials from "./Socials";
 import resume from "../assets/Dagime-s-Resume.pdf";
 
@@ -62,10 +62,12 @@ const LandingSection = () => (
           <image
             clip-path="url(#blobClip)"
             href={img}
-            x="-45"
-            y="-10"
-            height="250px"
-            width="250px"
+            x="30"
+            y="30"
+            height="150px"
+            width="150px"
+            loading="eager"
+            decoding="asynchronous"
           />
         </svg>
       </div>
