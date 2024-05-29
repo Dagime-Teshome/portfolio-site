@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { HStack, VStack } from "@chakra-ui/react";
-import logo from "../images/Logos/logo_large.png";
+import logo from "../images/Logos/logo_large(tiny).png";
 import { Divide as Hamburger } from "hamburger-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import resume from "../assets/Dagime-s-Resume.pdf";
