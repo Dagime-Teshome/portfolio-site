@@ -78,13 +78,17 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
                         >
                           <Zoom>
                             <img
+                              height={`${
+                                selectedProject.id == "MESS" ? "300PX" : "300px"
+                              }`}
+                              width={`${
+                                selectedProject.id == "MESS" ? "300PX" : "600px"
+                              }`}
                               className={`max-h-full max-w-full object-cover ${
                                 selectedProject.id === "MESS"
-                                  ? "min-w-96 min-h-[30%]"
+                                  ? "min-w-96 min-h-[20%]"
                                   : "p-3"
                               }`}
-                              height="300px"
-                              width="600px"
                               src={image}
                               loading="lazy"
                               decoding="asynchronous"
@@ -176,7 +180,7 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
                     return (
                       <div
                         key={i}
-                        className="flex  border-x-1 flex-col items-center justify-center w-10 h-10 
+                        className="flex  border-x-1 flex-col items-center justify-center w-10 h-10
                       font-thin text-gray-600  text-center"
                       >
                         <FontAwesomeIcon
