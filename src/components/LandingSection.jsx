@@ -4,7 +4,7 @@ import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 import FullScreenSection from "./FullScreenSection";
 import img from "../images/headShots/mePicture.webp";
 import Socials from "./Socials";
-import resume from "../assets/Dagime-s-Resume.pdf";
+import resume from "../assets/01_Dagime_Resume.pdf";
 
 const LandingSection = () => (
   <FullScreenSection id="Landing-Section">
