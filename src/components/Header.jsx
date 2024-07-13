@@ -3,7 +3,7 @@ import { HStack, VStack } from "@chakra-ui/react";
 import logo from "../images/Logos/logo_large(tiny).png";
 import { Divide as Hamburger } from "hamburger-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import resume from "../assets/Dagime-s-Resume.pdf";
+import resume from "../assets/01Dagime_Resume.pdf";
 import { Link } from "react-scroll";
 
 const Header = () => {
