@@ -78,5 +78,4 @@ const LandingSection = () => (
     />
   </FullScreenSection>
 );
-
 export default LandingSection;

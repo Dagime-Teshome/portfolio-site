@@ -33,7 +33,7 @@ const LandingSection = () => {
           <div className="w-full mt-7 lg:w-1/3 flex justify-center lg:justify-center">
             <form
               className="w-2/3 flex flex-col gap-4 lg:max-w-2xl h-[18rem]"
-              action="https://formsubmit.co/93d4b602ccda8a73a9c5cfa20f58cfeb"
+              action="https://formspree.io/f/mdkogljd"
               method="POST"
             >
               <Input
