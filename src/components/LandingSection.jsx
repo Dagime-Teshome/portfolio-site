@@ -19,11 +19,11 @@ const LandingSection = () => (
             Hey,I'm Dagime
           </h6>
           <h5 className="mt-2 text-nowrap text-2xl text-gray-500">
-            Front-end Developer
+            Software Developer
           </h5>
           <h3 className="text-pretty mt-5  text-black  text-center text-xl">
-            Experienced front-end developer with 5+ years of expertise crafting
-            dynamic and user-friendly web experiences.
+            Software Developer with 5+ years of expertise crafting dynamic and
+            user-friendly web experiences.
           </h3>
           <Socials />
           <a href={resume} target="blank">
