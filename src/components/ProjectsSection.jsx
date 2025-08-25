@@ -110,7 +110,7 @@ const ProjectsSection = () => {
         </carousel.Carousel>
       </div>
       <div className="flex w-full h-8 justify-evenly items-center md:hidden overflow-clip">
-        {cardData.map((card, i) => {
+        {carfdData.map((card, i) => {
           return (
             <div
               key={i}
