@@ -104,7 +104,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="w-1/2">
-          <nav className="hidden lg:flex lg:items-center gap-5 text-sm justify-end">
+          <nav className="hidden lg:flex text-black lg:items-center gap-5 text-sm justify-end">
             <HStack spacing={8}>
               {navLinks.map((link, i) => {
                 return (

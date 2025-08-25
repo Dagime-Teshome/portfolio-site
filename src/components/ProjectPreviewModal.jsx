@@ -59,11 +59,13 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
       onClose={onClose}
       isCentered
       size={"6xl"}
-      className="rounded-2xl"
+      className="rounded-2xl , bg-white"
     >
       <ModalOverlay />
-      <ModalContent>
-        <ModalHeader>{selectedProject?.projectName}</ModalHeader>
+      <ModalContent className="rounded-2xl p-5 " bg="white">
+        <ModalHeader className="text-black">
+          {selectedProject?.projectName}
+        </ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <div className="w-full lg:flex lg:flex-row gap-8  lg:min-h-[40vh] justify-center">
@@ -145,7 +147,7 @@ const ProjectPreviewModal = forwardRef((props, refs) => {
                 <span className=" text-base font-bold text-black text-left">
                   Impact :
                 </span>
-                <div className="mt-2 text-grey-900">
+                <div className="mt-2 text-black">
                   {selectedProject?.projImpact}
                 </div>
               </div>

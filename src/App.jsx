@@ -6,6 +6,7 @@ import ContactMeSection from "./components/ContactMeSection";
 import Footer from "./components/Footer";
 import AboutMeSection from "./components/AboutMeSection";
 import TimelineSection from "./components/TimeLine";
+import "./App.css";
 
 function App() {
   return (

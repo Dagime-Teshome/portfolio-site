@@ -19,8 +19,8 @@ const LandingSection = () => {
         <div className="flex flex-col lg:flex-row justify-evenly">
           <div className="w-full lg:w-1/3 flex lg:justify-center">
             <div className="flex flex-col lg:max-w-96">
-              <h1 className="text-2xl font-bold mb-8">Say Hello!</h1>
-              <p className="text-left">
+              <h1 className="text-2xl font-bold mb-8 text-black">Say Hello!</h1>
+              <p className="text-left text-black">
                 If you have any questions about my work or project ideas you
                 would like to discuss, feel free to contact me . I'll get back
                 to you as soon as possible
@@ -41,17 +41,20 @@ const LandingSection = () => {
                 placeholder="Name"
                 name="name"
                 required
+                border="1px solid lightgrey"
               ></Input>
               <Input
                 type="email"
                 placeholder="Email"
                 name="email"
+                border="1px solid lightgrey"
                 required
               ></Input>
               <Textarea
                 name="message"
                 resize="none"
                 placeholder="Message"
+                border="1px solid lightgrey"
                 required
               />
               <button
@@ -60,6 +63,7 @@ const LandingSection = () => {
                           text-base p-4  w-full text-neutral-50 bg-neutral-950 font-medium self-center
                           transition duration-700 ease-in-out
               hover:-translate-y-1 hover:scale-110"
+                border="1px solid lightgrey"
               >
                 Submit
               </button>
